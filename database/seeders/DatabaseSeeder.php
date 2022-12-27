@@ -4,8 +4,9 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-// importing the UserSeeder Class
+// importing the UserSeeder and RolesSeeder Class
 use Database\Seeders\UserSeeder;
+use Database\Seeders\RolesSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,7 +25,10 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            // though have only defined the UserSeeder Class
+            
+            // defined the RolesSeeder Class
+            RolesSeeder::class,
+            // defined the UserSeeder Class
             UserSeeder::class,
             // PostSeeder::class,
             // CommentSeeder::class,

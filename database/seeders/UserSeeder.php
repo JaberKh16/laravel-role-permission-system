@@ -45,11 +45,13 @@ class UserSeeder extends Seeder
 
         // to loop through the users
         foreach ($allUsers as $someUser){
-            User::create([
+            $createdUsers = User::create([
                 'name' => $someUser['name'],
                 'email' => $someUser['email'],
                 'password' => Hash::make($someUser['password']),
             ]);
+
+            $createdUsers->assignRole($someUser['role']);
         }
     }
        
