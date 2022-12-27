@@ -23,19 +23,22 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Admin',
                 'email' => 'admin@gmail.com',
-                'password' =>  'password'
+                'password' =>  'password',
+                'role' => 'admin'
             ],
 
             [
                 'name' => 'User1',
                 'email' => 'user1@gmail.com',
-                'password' =>  '12345678'
+                'password' =>  '12345678',
+                'role' => 'user1'
             ],
 
             [
                 'name' => 'User2',
                 'email' => 'user2@gmail.com',
-                'password' =>  '87654321'
+                'password' =>  '87654321',
+                'role' => 'user2'
             ],
 
         ];
