@@ -34,12 +34,6 @@ class UserSeeder extends Seeder
                 'role' => 'user1'
             ],
 
-            [
-                'name' => 'User2',
-                'email' => 'user2@gmail.com',
-                'password' =>  '87654321',
-                'role' => 'user2'
-            ],
 
         ];
 
