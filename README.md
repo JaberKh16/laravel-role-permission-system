@@ -26,6 +26,8 @@ Spatie Package has been used for roles/permission related working facility. See 
                 
                 email- admin@gmail.com
                 password- password
+                
+                
           b) If User then use- 
                 
                 email- user1@gmail.com
