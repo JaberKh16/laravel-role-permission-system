@@ -5,7 +5,9 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 <template>
     <div>
         <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
+            <Link :href="route('login')" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</Link>
 
+            <Link v-if="canRegister" :href="route('register')" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</Link>
         </div>
 
         <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 pb-3" >
