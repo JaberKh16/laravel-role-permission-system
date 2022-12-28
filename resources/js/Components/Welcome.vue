@@ -14,16 +14,16 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
             </div>
 
             <div v-if="$page.props.user.permissions.includes('Create Roles')">
-                <button type="button">Write Roles</button>
+                <vbutton type="button">Write Roles</vbutton>
             </div>
 
             <div v-if="$page.props.user.permissions.includes('Edit Roles')">
-                <button type="button" variant="danger">Edit Roles</button>
+                <b-button type="button" variant="danger">Edit Roles</b-button>
 
             </div>
 
             <div v-if="$page.props.user.permissions.includes('Delete Roles')">
-                <button type="button">Delete Roles</button>
+                <b-button type="button">Delete Roles</b-button>
             </div>
             
             <div v-if="$page.props.user.permissions.includes('View Products')">
@@ -31,7 +31,7 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
             </div>
 
             <div v-if="$page.props.user.permissions.includes('Create Products')">
-                <button type="button">Write Products</button>
+                <b-button type="button">Write Products</b-button>
             </div>
 
             <div v-if="$page.props.user.permissions.includes('Edit Products')">
@@ -40,7 +40,7 @@ import ApplicationLogo from '@/Components/ApplicationLogo.vue';
             </div>
 
             <div v-if="$page.props.user.permissions.includes('Delete Products')">
-                <button type="button">Delete Products</button>
+                <b-button type="button">Delete Products</b-button>
             </div>
         </div>
     </div>
